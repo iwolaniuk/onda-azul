@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="device-width, initial-scale="1.0">
-        <title>Contato | ONG Onda Azul</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-  <div class="logo">
-    <img src="imagens/logo.png" alt="Logo da ONG Onda Azul">
-    <h1>Fale conosco</h1>
-  </div>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | ONG Onda Azul</title>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="projetos.html">Projetos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-</header>
+  <meta name="description" content="Entre em contato com a ONG Onda Azul para dúvidas, voluntariado e doações." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo da ONG Onda Azul" />
+      <h1>ONG Onda Azul</h1>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html" aria-current="page">Contato</a>
+    </nav>
+  </header>
 
-        <main>
-            <h2>Envie uma mensagem</h2>
-            <form>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome><br><br>
-                
-                label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+  <main>
+    <section>
+      <h2>Fale Conosco</h2>
+      <p>Preencha o formulário e retornaremos em breve.</p>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5"><</textarea><br><br>
+      <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </main>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
 
-        <footer>
-            <p>© 2025 ONG Onda Azul - Todos os direitos reservados</p>
-        </footer>
-    </body>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="msg-sucesso" class="sucesso"></p>
+    </section>
+
+    <hr>
+
+    <section class="doacao">
+      <h2>Faça uma Doação</h2>
+      <p>Ajude a Onda Azul a proteger a vida marinha.</p>
+
+      <button class="btn-valor" data-valor="20">Doar R$ 20</button>
+      <button class="btn-valor" data-valor="50">Doar R$ 50</button>
+      <button class="btn-valor" data-valor="100">Doar R$ 100</button>
+      <p id="msg-doacao" class="sucesso"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ONG Onda Azul — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
