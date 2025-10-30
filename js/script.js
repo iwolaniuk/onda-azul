@@ -87,4 +87,29 @@ if (botaoDoar) {
     botoes.forEach(b => b.classList.remove('ativo'));
   });
 }
+// Menu hambúrguer (mobile)
+const toggle = document.getElementById('menu-toggle');
+const links = document.getElementById('nav-links');
+if (toggle && links){
+  toggle.addEventListener('click', ()=> {
+    links.classList.toggle('open');
+  });
+}
+function showToast(text, ms=2400){
+  const t = document.getElementById('toast');
+  if(!t) return;
+  t.textContent = text;
+  t.style.display = 'block';
+  setTimeout(()=> t.style.display='none', ms);
+}
+
+// exemplo de uso depois do submit do contato:
+const formContato = document.getElementById('form-contato');
+if (formContato){
+  formContato.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    showToast('Mensagem enviada! 💙');
+    formContato.reset();
+  });
+}
 
