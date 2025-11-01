@@ -34,3 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// 🌙 Alternar modo escuro
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleDark = document.getElementById("toggle-dark");
+  if (toggleDark) {
+    toggleDark.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleDark.textContent = document.body.classList.contains("dark-mode")
+        ? "☀️ Modo Claro"
+        : "🌙 Modo Escuro";
+    });
+  }
+});

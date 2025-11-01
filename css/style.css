@@ -246,3 +246,54 @@ footer{
 @media (min-width:1367px){
   .container{width:min(100% - 4rem, var(--container))}
 }
+#toggle-dark {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Estilos do modo escuro */
+.dark-mode {
+  background-color: #0b132b;
+  color: #f1f1f1;
+}
+
+.dark-mode a {
+  color: #90e0ef;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1c2541;
+  color: #fff;
+}
+/* 🔧 Ajuste de contraste no modo escuro */
+.dark-mode main,
+.dark-mode section,
+.dark-mode article {
+  background-color: #1c2541; /* fundo mais escuro para o conteúdo */
+  color: #f1f1f1; /* texto claro */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+  color: #f1f1f1;
+}
+
+.dark-mode .btn {
+  background-color: #00b4d8;
+  color: #fff;
+}
+
+.dark-mode .btn:hover {
+  background-color: #0096c7;
+}
