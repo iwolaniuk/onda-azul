@@ -46,3 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// ====== MENU HAMBÚRGUER ======
+document.addEventListener("DOMContentLoaded", () => {
+  const btnMenu = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  if (btnMenu && navLinks) {
+    btnMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("ativo");
+    });
+  }
+});
