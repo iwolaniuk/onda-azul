@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // ====== MENU HAMBÚRGUER ======
 document.addEventListener("DOMContentLoaded", () => {
-  const btnMenu = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+  const btnMenu = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
   if (btnMenu && navLinks) {
     btnMenu.addEventListener("click", () => {
@@ -57,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+

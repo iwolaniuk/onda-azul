@@ -297,3 +297,29 @@ footer{
 .dark-mode .btn:hover {
   background-color: #0096c7;
 }
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .nav-links.ativo {
+    display: flex;
+  }
+}
